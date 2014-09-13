@@ -1,0 +1,16 @@
+{
+  "name": "ease",
+  "description": "An approximation to ease, the default CSS timing function",
+  "authors": [
+    "Miëtek Bak <mietek@bak.io>"
+  ],
+  "license": "MIT X11",
+  "homepage": "https://github.com/mietek/ease",
+  "ignore": [
+    "data.csv",
+    "figure1.png",
+    "figure2.png",
+    "README.md"
+  ],
+  "main": "index.js"
+}
