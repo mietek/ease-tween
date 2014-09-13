@@ -9,7 +9,15 @@ Thanks to [Robert Penner](http://www.robertpenner.com/easing/) for popularising 
 Usage
 -----
 
-TODO
+```sh
+bower install ease
+```
+
+```js
+var ease = require('ease').ease;
+```
+
+See [ease-scroll](https://github.com/mietek/ease-scroll/) for a usage example.
 
 
 Details
