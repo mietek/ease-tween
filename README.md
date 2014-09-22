@@ -1,7 +1,9 @@
 ease
 ====
 
-An approximation to `ease`, the default CSS [transition timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function).
+CSS-style easing in JavaScript.
+
+Minimal.  Fast.  Approximate.
 
 Thanks to [Robert Penner](http://www.robertpenner.com/easing/) for popularising the use of easing functions.
 
@@ -9,21 +11,26 @@ Thanks to [Robert Penner](http://www.robertpenner.com/easing/) for popularising 
 Usage
 -----
 
-```sh
-bower install ease
-```
-
 ```js
 var ease = require('ease').ease;
 ```
 
-See [ease-scroll](https://github.com/mietek/ease-scroll/) for a usage example.
+See [ease-scroll](https://github.com/mietek/ease-scroll/) for more information.
+
+
+### Installation
+
+```sh
+bower install ease
+```
+
+Requires [Bower](http://bower.io/).
 
 
 Details
 -------
 
-The function is an exponential approximation to the cubic Bézier with control points at `(0.25, 0.1)` and `(0.25, 1.0)`.
+The function is an exponential approximation to `ease`, the default CSS [transition timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function), which is a cubic Bézier curve with control points at `(0.25, 0.1)` and `(0.25, 1.0)`.
 
 Coefficients were found with [ZunZun](http://zunzun.com/Equation/2/Simple/Simple%20Equation%2023/), based on [data](https://github.com/mietek/ease/blob/master/data.csv) sampled with [bezier-easing](https://github.com/gre/bezier-easing).
 
