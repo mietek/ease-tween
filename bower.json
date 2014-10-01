@@ -9,8 +9,7 @@
   "ignore": [
     "data.csv",
     "figure1.png",
-    "figure2.png",
-    "README.md"
+    "figure2.png"
   ],
   "main": "index.js"
 }
