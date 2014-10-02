@@ -3,7 +3,7 @@ ease
 
 CSS-style easing in JavaScript.
 
-Minimal.  Fast.  Approximate.
+Fast.  Approximate.  No dependencies.
 
 Thanks to [Robert Penner](http://www.robertpenner.com/easing/) for popularising the use of easing functions.
 
