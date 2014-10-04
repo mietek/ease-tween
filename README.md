@@ -20,11 +20,11 @@ See [ease-scroll](https://github.com/mietek/ease-scroll/) for more information.
 
 ### Installation
 
+Available as a [Bower](http://bower.io/) package.
+
 ```sh
 bower install ease
 ```
-
-Requires [Bower](http://bower.io/).
 
 
 Details
