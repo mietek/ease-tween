@@ -1,34 +1,29 @@
-ease
-====
+_ease_
+======
 
 CSS-style easing in JavaScript.
 
-Fast.  Approximate.  No dependencies.
 
-Thanks to [Robert Penner](http://www.robertpenner.com/easing/) for popularising the use of easing functions.
-
-
-Usage
------
+### Example
 
 ```js
 var ease = require('ease').ease;
 ```
 
-See [ease-scroll](https://github.com/mietek/ease-scroll/) for more information.
+See [_ease-scroll_](https://github.com/mietek/ease-scroll/) for more information.
 
 
-### Installation
+Usage
+-----
 
-Available as a [Bower](http://bower.io/) package.
+_ease_ is installed with [Bower](http://bower.io/).
 
-```sh
-bower install ease
+```
+$ bower install ease
 ```
 
 
-Details
--------
+### Documentation
 
 The function is an exponential approximation to `ease`, the default CSS [transition timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function), which is a cubic Bézier curve with control points at `(0.25, 0.1)` and `(0.25, 1.0)`.
 
@@ -37,6 +32,7 @@ Coefficients were found with [ZunZun](http://zunzun.com/Equation/2/Simple/Simple
 ![](https://github.com/mietek/ease/blob/master/figure1.png)
 
 ![](https://github.com/mietek/ease/blob/master/figure2.png)
+
 
 | Absolute error         |                             |
 | :----------------------|---------------------------: |
@@ -51,7 +47,12 @@ Coefficients were found with [ZunZun](http://zunzun.com/Equation/2/Simple/Simple
 | Kurtosis               | −7.313037 × 10<sup>−1</sup> |
 
 
-License
--------
+About
+-----
 
-[MIT X11](https://github.com/mietek/license/blob/master/LICENSE.md) © [Miëtek Bak](http://mietek.io/)
+Made by [Miëtek Bak](https://mietek.io/).  Published under the [MIT X11 license](https://mietek.io/license/).
+
+
+### Acknowledgments
+
+Thanks to [Robert Penner](http://www.robertpenner.com/easing/) for popularising the use of easing functions.
