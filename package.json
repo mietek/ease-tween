@@ -1,0 +1,13 @@
+{
+  "name": "ease-tween",
+  "version": "1.1.0",
+  "description": "CSS-style easing and tweening in JavaScript",
+  "author": "Miëtek Bak <hello@mietek.io>",
+  "homepage": "https://github.com/mietek/ease-tween",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mietek/ease-tween"
+  },
+  "license": "MIT",
+  "main": "src/index.js"
+}

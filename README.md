@@ -1,38 +1,56 @@
-_ease_
-======
+_ease-tween_
+============
 
-CSS-style easing in JavaScript.
-
-
-### Example
-
-```js
-var ease = require('ease').ease;
-```
-
-See [_ease-scroll_](https://github.com/mietek/ease-scroll/) for more information.
+CSS-style easing and tweening in JavaScript.
 
 
 Usage
 -----
 
-_ease_ is installed with [Bower](http://bower.io/).
-
 ```
-$ bower install ease
+$ npm install --save ease-tween
 ```
 
 
-### Documentation
+### Example
 
-The function is an exponential approximation to `ease`, the default CSS [transition timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function), which is a cubic Bézier curve with control points at `(0.25, 0.1)` and `(0.25, 1.0)`.
+```js
+var easeTween = require("easeTween").easeTween;
 
-Coefficients were found with [ZunZun](http://zunzun.com/Equation/2/Simple/Simple%20Equation%2023/), based on [data](https://github.com/mietek/ease/blob/master/data.csv) sampled with [bezier-easing](https://github.com/gre/bezier-easing).
+function easeScrollElementX(element, x, duration, callback) {
+  var startX = element.scrollLeft;
+  var maxX = element.scrollWidth - element.clientWidth;
+  var distanceX = Math.max(0, Math.min(x, maxX)) - startX;
+  easeTween(duration, function (t) {
+      element.scrollLeft = t * distanceX + startX;
+    },
+    callback);
+}
+```
 
-![](https://github.com/mietek/ease/blob/master/figure1.png)
+See [_ease-scroll_](https://github.com/mietek/ease-scroll/) for more information.
 
-![](https://github.com/mietek/ease/blob/master/figure2.png)
 
+Documentation
+-------------
+
+### easeTween(duration, step, callback)
+
+TODO
+
+
+### tween(duration, step, callback)
+
+TODO
+
+
+### ease(t)
+
+An exponential approximation of the default CSS [transition timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function).
+
+![](doc/ease.png)
+
+![](doc/error.png)
 
 | Absolute error         |                             |
 | :----------------------|---------------------------: |
@@ -50,9 +68,11 @@ Coefficients were found with [ZunZun](http://zunzun.com/Equation/2/Simple/Simple
 About
 -----
 
-Made by [Miëtek Bak](https://mietek.io/).  Published under the [MIT X11 license](https://mietek.io/license/).
+Made by [Miëtek Bak](https://mietek.io/).  Published under the [MIT X11 license](LICENSE.md).
 
 
 ### Acknowledgments
 
 Thanks to [Robert Penner](http://www.robertpenner.com/easing/) for popularising the use of easing functions.
+
+The approximation was found with [ZunZun](http://zunzun.com/Equation/2/Simple/Simple%20Equation%2023/), based on [samples](doc/samples.csv) obtained with [bezier-easing](https://github.com/gre/bezier-easing).
